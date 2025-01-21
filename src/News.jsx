@@ -48,7 +48,7 @@ const News = () => {
         <p className="text-center text-gray-600 w-screen h-screen">Loading...</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {articles.map((article, index) => (
+          {articles?.map((article, index) => (
             <div
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden"
